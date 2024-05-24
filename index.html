@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASY</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/Myhome.css">
+    <!-- js -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <script src="js/Myhome.js"></script>
+</head>
+<body>
+    <header>
+        <div class="center_box">
+            <div class="logo">
+                <a href="#"><img src="img/header_logo.png" alt="안소연로고"></a>
+            </div>
+            <!-- 화면 맨 위의 주메뉴 -->
+            <ul class="header_menu" id="menu">
+                <li data-menuanchor="about_me">
+                    <a href="#about_me">ABOUT ME</a>
+                </li>
+                <li data-menuanchor="skills">
+                    <a href="#skills">SKILLS</a>
+                </li>
+                <li data-menuanchor="portfolio">
+                    <a href="#portfolio">PORTFOLIO</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrap">
+        <section class="section s1">
+            <!-- <img src="img/s1_b.png" alt="배경이미지"> -->
+            <div class="center_box">
+                <div class="title">
+                    <h1>할 수 있다는 마음가짐으로</h1>
+                    <h1>맡은 일은 포기하지 않고 끝까지 하는 개발자</h1>
+                    <hr>
+                    <p>안녕하세요. 코드가 실행되는 과정이 즐거운 신입 개발자 안소연입니다.</p>
+                </div>
+                <input class="down_btn" type="button" value="제가 궁금하신가요?">
+            </div>
+        </section>
+        <section class="section s2" id="s2">
+            <div class="center_box">
+                <h2>ABOUT ME</h2>
+                <div class="about_me_box">
+                    <div class="about_me_img">
+                        <img src="img/test.png" alt="프로필사진예정">
+                        <div class="m_me_txt">
+                            <p>이름 : 안소연</p>
+                            <p>나이 : 99년생</p>
+                            <p>거주지 : 인천 서구</p>
+                            <p>이메일 : sjwkao2@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="me_txt">
+                        <div class="pc_me_txt">
+                            <p>이름 : 안소연</p>
+                            <p>나이 : 99년생</p>
+                            <p>거주지 : 인천 서구</p>
+                            <p>이메일 : sjwkao2@gmail.com</p>
+                        </div>
+                        <form class="gform"  method="post" data-email="sjwkao2@gmail.com"
+                        action="https://script.google.com/macros/s/AKfycbx47CpMBDBXg6iGuuDkgpU06YqYe74afFJ7RecAnd6S_fCaqRPCrBRrL-JyMan1-Us/exec">
+                            <div class="form_group">
+                                <input type="text" name="e-name" id="form-nickname" placeholder="닉네임 또는 이름">
+                                <input type="email" name="e-email" id="form-email" placeholder="이메일">
+                            </div>
+                            <div class="form_message">
+                                <textarea name="e-message" id="form-message" placeholder="무엇이 궁금하신가요?"></textarea>
+                            </div>
+                            <div class="form_group form_button">
+                                <button type="submit" class="btn">전송</button>
+                                <button type="reset">취소</button>
+                            </div>
+                            <div style="display:none" class="thankyou_message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section s3" id="s3">
+            <div class="center_box">
+                <h2>SKILLS</h2>
+                <div class="skill_box">
+                    <div class="skill">
+                        <svg class="skill-circle" viewBox="0 0 36 36">
+                            <path class="skill_bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="skill_bar"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                              stroke-dasharray="85, 100"
+                            />
+                        </svg>
+                        <div class="skill_txt">
+                            <p>85%</p>
+                            <hr>
+                            <span>HTML5, CSS3</span>
+                        </div>
+                    </div><!--html css-->
+                    <div class="skill">
+                        <svg class="skill-circle" viewBox="0 0 36 36">
+                            <path class="skill_bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="skill_bar"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                              stroke-dasharray="75, 100"
+                            />
+                        </svg>
+                        <div class="skill_txt">
+                            <p>75%</p>
+                            <hr>
+                            <span>JS</span>
+                        </div>
+                    </div><!--js-->
+                    <div class="skill">
+                        <svg class="skill-circle" viewBox="0 0 36 36">
+                            <path class="skill_bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="skill_bar"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                              stroke-dasharray="70, 100"
+                            />
+                        </svg>
+                        <div class="skill_txt">
+                            <p>70%</p>
+                            <hr>
+                            <span>JAVA</span>
+                        </div>
+                    </div><!--java-->
+                    <div class="skill">
+                        <svg class="skill-circle" viewBox="0 0 36 36">
+                            <path class="skill_bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="skill_bar"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                              stroke-dasharray="80, 100"
+                            />
+                        </svg>
+                        <div class="skill_txt">
+                            <p>80%</p>
+                            <hr>
+                            <span>JSP</span>
+                        </div>
+                    </div><!--jsp-->
+                    <div class="skill">
+                        <svg class="skill-circle" viewBox="0 0 36 36">
+                            <path class="skill_bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="skill_bar"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                              stroke-dasharray="75, 100"
+                            />
+                        </svg>
+                        <div class="skill_txt">
+                            <p>75%</p>
+                            <hr>
+                            <span>Spring Boot</span>
+                        </div>
+                    </div><!--Spring Boot-->
+                    <div class="skill">
+                        <svg class="skill-circle" viewBox="0 0 36 36">
+                            <path class="skill_bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="skill_bar"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                              stroke-dasharray="90, 100"
+                            />
+                        </svg>
+                        <div class="skill_txt">
+                            <p>90%</p>
+                            <hr>
+                            <span>Oracle DB</span>
+                        </div>
+                    </div><!--오라클DB-->
+                </div>
+            </div>
+        </section>
+        <section class="section s4" id="s4">
+            <div class="center_box">
+                <h2>PORTFOLIO</h2>
+                <div class="portfolio_tab_title">
+                    <ul>
+                        <li><a href="#">MOVIE RESERVATION</a></li>
+                        <li><a href="#">SIDMOOL</a></li>
+                        <li><a href="#">MUJI</a></li>
+                        <li><a href="#">STARBUCKS</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio_tab_con">
+                    <div class="tab_con con_Movie">
+                        <div class="portfolio_img">
+                            <img class="portfolio_img_after" src="img/after_sidmool.png" alt="리뉴얼한 시드물 화면">
+                            <img class="portfolio_img_before" src="img/before_sidmool.png" alt="기존 시드물 화면">
+                        </div>
+                        <div class="portfolio_txt">
+                            <b>영화티켓 예매<span> - 백엔드</span></b>
+                            <hr>
+                            <p>
+                                아직 하는 중 <br>
+                            </p>
+                            <br>
+                            <p>활용 프로그램 : IntelliJ, Figma</p>
+                            <p>활용 기술 : </p>
+                            <div class="portfolio_btn">
+                                <a href="#">기획서 보기</a>
+                                <a href="#">사이트 보기</a>
+                            </div>
+                        </div>
+                    </div><!--영화티켓 예매 end-->
+                    <div class="tab_con con_Sidmool">
+                        <div class="portfolio_img">
+                            <img class="portfolio_img_after" src="img/after_sidmool.png" alt="리뉴얼한 시드물 화면">
+                            <img class="portfolio_img_before" src="img/before_sidmool.png" alt="기존 시드물 화면">
+                        </div>
+                        <div class="portfolio_txt">
+                            <b>시드물 <span>- 리뉴얼</span></b>
+                            <hr>
+                            <p>
+                                기존 사이트보다 눈의 피로도를 줄이면서 보기 쉽게 하는게 가장 큰 목표였습니다. <br>
+                                과도한 정보를 덜어내되, 시드물이 어필하고자 하는 요소는 최대한 살리려고 노력했습니다.
+                                벤치마킹 사이트의 구조에 시드물의 요소를 어색하지 않게 융합하는 과정이 어려웠지만 그만큼의 가치가 있었다고 생각합니다. <br>
+                            </p>
+                            <br>
+                            <p>활용 프로그램 : Visual Studio Code, Figma</p>
+                            <p>활용 기술 : HTML5, CSS3, jQuery</p>
+                            <div class="portfolio_btn">
+                                <a href="file/Sidmool_renewal_proposal.pdf" target="_blank">기획서 보기</a>
+                                <a href="https://thdusl.github.io/renewalSidmool/" target="_blank">사이트 보기</a>
+                            </div>
+                        </div>
+                    </div><!--시드물 end-->
+                    <div class="tab_con con_MUJI">
+                        <div class="portfolio_img">
+                            <img class="portfolio_img_after" src="img/after_MUJI.png" alt="리뉴얼한 무인양품 화면">
+                            <img class="portfolio_img_before" src="img/before_MUJI.png" alt="기존 무인양품 화면">
+                        </div>
+                        <div class="portfolio_txt">
+                            <b>무인양품 <span>- 리뉴얼</span></b>
+                            <hr>
+                            <p>
+                                동일한 메뉴를 줄여보는 것을 최우선으로 했으며, 
+                                웹을 꾸미는 과정에서 무인양품의 특색을 죽이지 않으려고 노력했습니다. <br>
+                            </p>
+                            <br>
+                            <p>활용 프로그램 : Visual Studio Code, Figma</p>
+                            <p>활용 기술 : HTML5, CSS3, jQuery</p>
+                            <div class="portfolio_btn">
+                                <a href="file/MUJI_renewal_proposal.pdf" target="_blank">기획서 보기</a>
+                                <a href="https://thdusl.github.io/renewalMUJI/" target="_blank">사이트 보기</a>
+                            </div>
+                        </div>
+                    </div><!--무인양품 end-->
+                    <div class="tab_con con_Starbucks">
+                        <div class="portfolio_img">
+                            <img class="portfolio_img_after" src="img/after_starbucks.png" alt="리뉴얼한 스타벅스 화면">
+                            <img class="portfolio_img_before" src="img/after_starbucks.png" alt="리뉴얼한 스타벅스 화면">
+                        </div>
+                        <div class="portfolio_txt">
+                            <b>스타벅스 <span>- 클론코딩</span></b>
+                            <hr>
+                            <p>
+                                최대한 동일한 결과를 구현하기 위해 어떤 식으로 구조를 짜야하고, 어떤 방법을
+                                사용해야 하는지를 배웠습니다. 
+                                <br>
+                                특히 애니메이션 효과를 주는 과정과 2단 내비게이션을 설계하는 방법이 새로웠습니다.
+                                <br>
+                            </p>
+                            <br>
+                            <p>활용 프로그램 : Visual Studio Code, Figma</p>
+                            <p>활용 기술 : HTML5, CSS3, jQuery </p>
+                            <div class="portfolio_btn">
+                                <a href="https://thdusl.github.io/starbucks/" target="_blank">사이트 보기</a>
+                            </div>
+                        </div>
+                    </div><!--스타벅스 end-->
+                </div>
+            </div>
+        </section><!--s4 end-->
+
+        <footer class="section fp-auto-height">
+            <a href="#" class="footer_logo">
+                <img src="img/footer_logo.png" alt="footer logo">
+            </a>
+            <p>ⓒ 2024. AhnSoYeon. All rights reserved.</p>
+        </footer>
+    </div>
+
+<script type="text/javascript">
+    (function() {      
+        //폼 내 모든 데이터를 가져와 객체로 반환
+        function getFormData(form) {
+            var elements = form.elements;
+            var honeypot;
+            var fields = Object.keys(elements).filter(function(k) {
+                //스팸 봇 차단
+                if (elements[k].name === "honeypot") {
+                    honeypot = elements[k].value;
+                    return false;
+                }
+                return true;
+            }).map(function(k) {
+                if(elements[k].name !== undefined) {
+                    return elements[k].name;
+                }else if(elements[k].length > 0){
+                    return elements[k].item(0).name;
+                }
+            }).filter(function(item, pos, self) {
+                return self.indexOf(item) == pos && item;
+            });
+
+            var formData = {};
+            fields.forEach(function(name){
+                var element = elements[name];
+                formData[name] = element.value;
+                if (element.length) {
+                    var data = [];
+                    for (var i = 0; i < element.length; i++) {
+                    var item = element.item(i);
+                    if (item.checked || item.selected) { 
+                        data.push(item.value); 
+                    }
+                    }
+                    formData[name] = data.join(', ');
+                }
+            });
+            formData.formDataNameOrder = JSON.stringify(fields);
+            formData.formGoogleSheetName = form.dataset.sheet || "responses";
+            formData.formGoogleSendEmail = form.dataset.email || "";
+
+            return {data: formData, honeypot: honeypot};
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            var form = event.target;    
+            var formData = getFormData(form);
+            var data = formData.data; 
+
+            // 유효성 검사
+            var allFieldsValid = true;  //모든 필드가 유효한지를 나타내는 플래그
+            const eName = document.querySelector("#form-nickname").value.trim();
+            const eMessage = document.querySelector("#form-message").value.trim();
+            const eEmail = document.querySelector("#form-email").value.trim();
+            const EmailCheck = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+$/;
+
+            if(eName === "" || eMessage === "" ){
+                alert("내용이 비어있습니다.");
+                // 하나라도 비어있으면 유효성 검사 실패
+                allFieldsValid = false; 
+                return false;
+            } else if (!EmailCheck.test(eEmail)|| eEmail === "" ) {
+                alert("이메일을 다시 확인해주세요.")
+                // 이메일이 유효하지 않으면 유효성 검사 실패
+                allFieldsValid = false; 
+                return false;
+            } else {
+                allFieldsValid = true;
+            }
+
+            var url = form.action;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                //서버에서 요청 완료되고 서버요청 성공적으로 처리된다면
+                if (xhr.readyState === 4 && xhr.status === 200 && allFieldsValid ) {
+                    form.reset(); // 폼 리셋
+                    alert("메일 전송에 성공했습니다. 빠른 시일내에 답변드리겠습니다.");
+                }
+            };
+            var encoded = Object.keys(data).map(function(k) {
+                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+            }).join('&');
+            xhr.send(encoded);
+        }
+        
+        //폼 전송 이벤트가 발생했을 때 함수 실행
+        function loaded() {
+            var forms = document.querySelectorAll("form.gform");
+            for (var i = 0; i < forms.length; i++) {
+                forms[i].addEventListener("submit", handleFormSubmit, false);
+            }
+        }; 
+        document.addEventListener("DOMContentLoaded", loaded, false); 
+        
+    })(); 
+</script>
+</body>
+</html>

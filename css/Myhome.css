@@ -1,0 +1,587 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{margin:0; padding:0; box-sizing: border-box;}
+/*  */
+html, body {
+    width: 100%;;
+    overflow-x: hidden;
+    font-family: 'Pretendard-Regular';
+    src: local('Apple SD Gothic Neo'), local('Nanum Gothic');
+}
+li { list-style: none; }
+a { text-decoration:none; 
+    color:#000; 
+    display: block; 
+    font-family: 'Pretendard-Regular';
+    src: local('Apple SD Gothic Neo'), local('Nanum Gothic');
+}
+img { width: 100%; }
+.wrap { width: 100%; }
+.center_box {
+    width: 1200px;
+    margin:0 auto;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0.5);
+    position: fixed;
+    top:0; left:0;
+    z-index: 100;
+}
+header .center_box {
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: relative;
+}
+header .logo{
+    width: 65px;
+}
+header .header_menu {
+    position: absolute;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    top: 25%;
+    right:0%;
+}
+header .header_menu li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ddd;
+}
+header .header_menu li:hover a,
+header .header_menu li.active a{
+    border-bottom: 5px solid rgba(248,211,116,0.3);
+    /* background-color:  */
+    color:#fff;
+}
+/* pc버전 s1 */
+.s1 {
+    width: 100%;height: 100%;
+    margin: 0 auto;
+    background-image: url(../img/s1_b.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ; 
+    text-align: center;
+}
+.s1 .title {
+    color: #FBF6EE;
+    margin-bottom: 5vw;
+}
+.s1 .title h1 {
+    font-size: 40px;
+    line-height: 3vw;
+}
+.s1 .title hr {
+    margin:1.5vw auto;
+    width: 70%;
+    opacity: 0.5;
+}
+.s1 .title p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+.s1 .down_btn{
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor:pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+}
+.s1 .down_btn:hover {
+    background-color: rgba(122, 122, 122,0.5);
+    color:#FBF6EE;
+}
+
+
+/* pc버전 s2 - ABOUT ME */
+section h2 { 
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.s2 .about_me_box {
+    width: 100%; height: 580px;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.s2 .about_me_box .about_me_img {
+    width: 45%;
+}
+/* 모바일용 텍스트 안보임 */
+.s2 .about_me_box .about_me_img .m_me_txt {
+    display: none;
+}
+.s2 .about_me_box .about_me_img::before {
+    content: '';
+    border-right: 1px solid #ddd;
+    position: absolute;
+    left: 50%; top: 40px;
+    /* 밑줄의 높이 */
+    height: 500px;
+}
+.s2 .about_me_box .me_txt {
+    width: 45%;
+    font-size: 18px;
+    line-height: 40px;
+}
+.s2 .about_me_box .me_txt form {
+    width: 100%;
+    padding-top: 20px;
+}
+.s2 .about_me_box .me_txt form .form_group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.s2 .about_me_box .me_txt form .form_group input {
+    font-family: 'Pretendard-Regular';
+    width: 49%;
+    font-size: 16px;
+    padding: 5px;
+    border: 1.5px solid #ddd;
+    outline: none;
+}
+.s2 .about_me_box .me_txt form .form_message textarea {
+    font-family: 'Pretendard-Regular';
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+    padding: 8px 5px;
+    border: 1.5px solid #ddd;
+    /* 사이즈 조정 없앰 */
+    resize: none;
+    outline: none;
+}
+.s2 .about_me_box .me_txt form .form_button button {
+    width: 49%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor:pointer;
+}
+.s2 .about_me_box .me_txt form .form_button button:first-child {
+    background-color: rgba(51, 51, 51,0.5);
+    border: 1px solid transparent;
+    color:#fff;
+}
+.s2 .about_me_box .me_txt form .form_button button:hover {
+    background-color: rgba(122, 122, 122,0.5);
+}
+
+/* pc버전 s3 - SKILLS */
+.s3 .skill_box {
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.s3 .skill_box .skill {
+    width: 32%;
+    text-align: center;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px 0 ;
+    position: relative;
+    margin-bottom: 1vw;
+}
+.s3 .skill_box .skill .skill-circle {
+    width:80%;
+}
+.s3 .skill .skill-circle .skill_bg {
+    stroke: #ddd;
+    fill:#ddd;
+    opacity: 0.3;
+    stroke-width: 3;
+}
+.s3 .skill .skill-circle .skill_bar {
+    fill: none;
+    stroke: rgba(248,211,116,0.8);
+    stroke-width: 1.5;
+    /* stroke-linecap: round; */
+}
+.s3 .skill .skill-circle .skill_bar.active {
+    animation: progress 1s 0.3s ease-out forwards;
+}
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+/* 스킬바 글자 */
+.s3 .skill .skill_txt {
+    width: 45%;
+    /* margin:0 auto; */
+    font-size: 30px;
+    position: absolute;
+    left: 28%; top:35%;
+}
+.s3 .skill .skill_txt hr {
+    margin-top: 5px;
+    border:1px solid #ccc;
+}
+.s3 .skill .skill_txt span{
+    font-size: 20px;
+}
+
+/* pc버전 s4 - PORTFOLIO 탭 메뉴 */
+.s4 > div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.s4 .portfolio_tab_title {
+    margin-bottom: 3.5vw;
+}
+.s4 .portfolio_tab_title ul {
+    display: flex;
+    justify-content: space-between;
+}
+.s4 .portfolio_tab_title ul li {
+    position: relative;
+    font-size: 28px;
+}
+.s4 .portfolio_tab_title ul li::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0;
+    /* 밑줄의 높이 */
+    height: 15px;
+    background-color: rgba(248,211,116,0.8); 
+    transition: all 0.5s ;
+}
+.s4 .portfolio_tab_title ul li:hover::after,
+.s4 .portfolio_tab_title ul li.active::after{
+    width: 100%;
+}
+.s4 .portfolio_tab_title ul li a {
+    z-index: 1;
+    position: relative;
+}
+.s4 .portfolio_tab_con .tab_con {
+    position: relative;
+    height: 350px;
+    margin-top: 90px;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_img {
+    width: 45%;
+    /* cursor:pointer; */
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt {
+    width: 42%; height: 350px;
+    position: absolute;
+    top:-5%;
+    right: 0;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt b {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt b span {
+    font-size: 20px;
+    font-weight: normal;
+    color: #aaa;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt hr {
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt p {
+    font-size: 17px;
+    line-height: 30px;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt .portfolio_btn {
+    position: absolute;
+    bottom:-5%;  left: 0;
+    display: flex;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt .portfolio_btn a {
+    border: 1px solid #333;
+    margin-right: 30px;
+    padding: 10px 20px;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt .portfolio_btn a:last-child {
+    background-color: #ddd;
+}
+
+
+/* footer 툴팁 없앰 */
+#fp-nav ul li:last-child {
+    display: none;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    padding: 1vw 0 ;
+    background-color: #ddd;
+    text-align: center;
+    /* color: #fff; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+footer .footer_logo {
+    margin:0 auto;
+    width: 50px;
+}
+
+/* 태블릿 버전 */
+@media screen and (max-width:1399px){
+header {
+    width: 100vw;
+    padding: 0 4vw;
+}
+.center_box {
+    width: 100%;
+}
+header .center_box {
+    display: flex;
+    justify-content: space-between;
+}
+header .header_menu {
+    width: 48%;
+    font-size: 16px;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    /* center_box 대용 */
+    padding: 0 4vw;
+    padding-top: 8vw;
+    padding-bottom: 0;
+}
+.s1 {
+    height: 100vh;
+}
+.s1 .center_box {
+    position: relative;
+    top:30%;
+}
+.s1 .title h1 {
+    line-height: normal;
+    font-size: 35px;
+}
+.s1 .down_btn {
+    color: #000; 
+}
+.s2 {
+    /* height: 100vh; */
+    /* padding-top: 10vw; */
+}
+.s2 .about_me_box {
+    padding: 30px;
+    height: 70vh;
+}
+.s2 .about_me_box .about_me_img::before {
+    content: '';
+    border-right: 1px solid #ddd;
+    position: absolute;
+    left: 50%; top: 5vh;
+    /* 밑줄의 높이 */
+    height: 60vh;
+}
+.s2 .about_me_box .me_txt {
+    line-height: 30px;
+}
+.s2 .about_me_box .me_txt form .form_button button {
+    color:#000;
+    font-size: 15px;
+}
+.s2 .about_me_box .me_txt form .form_message textarea {
+    height: 150px;
+}
+.s3 .skill_box {
+    height: 80vh;
+}
+.s3 .skill_box .skill {
+    height: 45%;
+}
+.s3 .skill_box .skill svg {
+    height: 100%;
+}
+.s4 .portfolio_tab_title {
+    margin-bottom: 5vw;
+}
+.s4 .portfolio_tab_con .tab_con {
+    margin:0;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_img {
+    width: 50%;
+    bottom: 5%;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt {
+    top:0;
+}
+
+
+}
+/* 모바일 버전 */
+@media screen and (max-width:1023px){
+header .logo {
+    width: 50px;
+}
+header .header_menu {
+    position:static;
+    width: 70%;
+}
+header .header_menu li a {
+    font-size: 16px;
+    border-bottom: 5px solid transparent;
+    white-space: nowrap;
+}
+section {
+    padding-top: 65px;
+    /* padding-bottom: 5vw; */
+}
+.s1 .title {
+    margin-bottom: 8vw;
+}
+.s1 .title h1 {
+    font-size: 28px;
+    line-height: 35px;
+}
+.s1 .title hr {
+    width: 80%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.s1 .title p {
+    font-size: 20px;
+}
+.s1 .down_btn {
+    font-size: 16px;
+}
+.s2 .center_box {
+    /* height: 100%; */
+}
+.s2 .about_me_box {
+    flex-flow:column nowrap;
+    justify-content: center;
+    padding: 20px;
+    height: 75vh;
+}
+.s2 .about_me_box .about_me_img{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s2 .about_me_box .about_me_img img {
+    width: 45%;
+    padding-right: 2vw;
+}
+.s2 .about_me_box .about_me_img .m_me_txt {
+    display: block;
+    line-height: 5vw;
+}
+.s2 .about_me_box .about_me_img::before {
+    display: none;
+}
+.s2 .about_me_box .me_txt {
+    width: 100%;
+    line-height: 25px;
+}
+/* pc용 텍스트 안보임 */
+.s2 .about_me_box .me_txt .pc_me_txt {
+    display: none;
+}
+.s2 .about_me_box .me_txt form .form_button button {
+    padding:8px;
+}
+.s3 {
+    /* height: 115vh; */
+}
+.s3 > div {
+    height: 100%;
+}
+.s3 .skill_box {
+    width: 100%; 
+    height: 78%;
+}
+.s3 .skill_box .skill {
+    width: 48%;
+    height: 30%;
+    margin-bottom: 3.5vw;
+}
+.s3 .skill .skill_txt {
+    width: 50%;
+    font-size: 25px;
+    left:25%;
+}
+.s3 .skill .skill_txt span {
+    font-size: 16px;
+}
+.s4 {
+    height: 123vh;
+    margin-bottom: 10vw;
+}
+.s4 .portfolio_tab_title ul {
+    flex-flow: column nowrap;
+}
+.s4 .portfolio_tab_title ul li {
+    margin-bottom: 2vw;
+}
+.s4 .portfolio_tab_title ul li::after {
+    height: 12px;
+}
+.s4 .portfolio_tab_title ul li a {
+    font-size: 20px;
+}
+.s4 .portfolio_tab_con .tab_con {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_img {
+    position: static;
+    width: 70vw;
+    margin:0 auto;
+    margin-bottom: 2vw;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt {
+    position: static;
+    width: 100%;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt b {
+    font-size: 22px;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt b span {
+    font-size: 18px;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt p {
+    font-size: 16px;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt .portfolio_btn {
+    width: 80%;
+    /* position: static; */
+    /* margin:0 auto; */
+    justify-content: center;
+    margin-top: 5vw;
+    bottom: -65%;
+    left: 10%;
+}
+.s4 .portfolio_tab_con .tab_con .portfolio_txt .portfolio_btn a:last-child {
+    margin-right: 0;
+}
+
+
+
+}
