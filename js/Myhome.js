@@ -24,7 +24,7 @@ $(function(){
     }else {
         //pc버전 fullpage
         $(".wrap").fullpage({
-            navigation:true,
+            //navigation:true,
             anchors:["","about_me","skills","portfolio"],
             navigationTooltips:["","자기소개","기술","포트폴리오"],
             showActiveTooltip:true,
