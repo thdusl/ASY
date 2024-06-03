@@ -515,7 +515,7 @@ section {
 }
 .s3 .skill_box {
     width: 100%; 
-    height: 90%;
+    height: 80%;
 }
 .s3 .skill_box .skill {
     border: none;
@@ -523,6 +523,9 @@ section {
     margin:0;
     width: 50%;
     height: 30%;
+}
+.s3 .skill_box .skill .skill-circle {
+    width: 90%;
 }
 .s3 .skill .skill_txt {
     width: 50%;
